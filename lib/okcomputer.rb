@@ -24,6 +24,7 @@ require "ok_computer/built_in_checks/resque_failure_threshold_check"
 require "ok_computer/built_in_checks/ruby_version_check"
 require "ok_computer/built_in_checks/sidekiq_latency_check"
 require "ok_computer/built_in_checks/solr_check"
+require "ok_computer/built_in_checks/rabbitmq_check"
 
 OkComputer::Registry.register "default", OkComputer::DefaultCheck.new
 OkComputer::Registry.register "database", OkComputer::ActiveRecordCheck.new
